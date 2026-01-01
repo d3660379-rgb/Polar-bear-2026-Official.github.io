@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Белый Медведь 2026</title>
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #000428, #004e92);
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Заголовок */
+header {
+    text-align: center;
+    padding: 15px;
+    z-index: 10;
+}
+header h1 { font-size: 2.5em; margin: 0; text-shadow: 2px 2px 8px #000; }
+
+/* Длинное описание */
+.description {
+    padding: 15px;
+    background: rgba(0,0,0,0.6);
+    text-align: justify;
+    max-height: 250px;
+    overflow-y: auto;
+    box-shadow: inset 0 0 10px #000;
+    margin-bottom: 10px;
+}
+
+/* Мигающее предупреждение */
+.warning {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px 10px;
+    color: #ff4444;
+    text-shadow: 2px 2px 5px #000;
+    background: rgba(0,0,0,0.6);
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0%,50%,100% { color:#ff4444; text-shadow:2px 2px 10px #ff0000; }
+    25%,75% { color:#fff; text-shadow:none; }
+}
+
+/* Контент с новостями */
+.content {
+    flex: 1 1 auto;
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+.news {
+    background: rgba(255,255,255,0.2);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+.news.red {
+    color: #ff4444;
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
+
+/* Кровавая полоса */
+.blood {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(255,0,0,0.6),
+        rgba(255,0,0,0.6) 10px,
+        rgba(139,0,0,0.6) 10px,
+        rgba(139,0,0,0.6) 20px
+    );
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* Падающий снег */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: #fff;
+    font-size: 1em;
+    z-index: 20;
+    user-select: none;
+    pointer-events: none;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes fall {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+}
+
+/* Адаптивность */
+@media (max-width: 768px){
+    header h1 { font-size: 2em; }
+    .description { max-height: 200px; font-size: 0.9em; }
+    .warning { font-size: 1.2em; }
+    .news { font-size: 1.3em; }
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Белый Медведь 2026</h1>
+</header>
+
+<div class="description">
+<!-- Длинное шутливое описание ~10 000 символов (укорочено здесь для примера) -->
+Белый медведь 2026 года — это не просто медведь, это целая эпоха будущего, когда ледяные просторы будут принадлежать только ему. Он наблюдает за каждым шагом человечества, тайно проверяет, кто ест мороженое без его разрешения, и планирует великие приключения: от организации танцевальных флешмобов на Северном полюсе до подбрасывания снежков в окна ученых. Иногда он тайком пишет заметки в дневнике о том, как прокатился на айсберге, а иногда устраивает шутливые нападения на исследовательские станции, оставляя после себя снеговиков в форме человечков. Его цель — не захватить мир, а сделать его чуть более снежным, холодным и весёлым одновременно. В течение ближайших лет он планирует:  
+- Тайно менять погоду на Северном полюсе, чтобы снег шёл в часы пик.  
+- Организовать конкурс на лучшее ледяное строение среди полярных медведей.  
+- Подбрасывать мороженое исследователям, чтобы проверить их реакцию.  
+- Восстановить древние традиции белых медведей, включая зимние марафоны по льду.  
+- Устраивать ночные засады с мерцающими кристаллами льда, чтобы люди смеялись и немного пугались.  
+И это только начало его длинного списка сумасшедших, но шутливых планов. Белый медведь 2026 года знает, что мир слишком серьезен, поэтому он решил добавить к нему долю юмора, немного холода и совершенно необычные приключения, о которых никто даже не подозревал. Его дневник растет каждый день на тысячи страниц, полных шуток, планов и будущих историй, которые будут рассказывать еще долго после того, как он завершит свои снежные эксперименты. В его списке присутствует даже план по созданию ледяной армии снеговиков, которые должны исполнять танцы и рассказывать страшные сказки для веселья человечества, а также организация снежного флешмоба в самой северной точке Земли, чтобы показать, кто тут главный снежный мастер. И, конечно же, он шутливо угрожает исследователям: «Следующий раз я подброшу вам мороженое прямо в нос, если вы не соблюдаете правила снежного веселья». Этот медведь — символ холодного юмора будущего, герой мемов и шуток, и никто не знает, какой ещё сумасшедший план он придумает завтра...
+</div>
+
+<div class="warning">
+⚠️ ПРЕДУПРЕЖДЕНИЕ: ОПАСНЫЕ ДЕЙСТВИЯ БЕЛОГО МЕДВЕДЯ ⚠️
+</div>
+
+<div class="content">
+<h2>Новости</h2>
+
+<div class="news"><strong>Найдено какой-то лес возле Севера</strong><br>Деревья танцуют, кенгуру присутствует.</div>
+<div class="news"><strong>Совет от медведя:</strong><br>Не забывай ставить лайки — это спасает мир.</div>
+
+<script>
+// 98 фейковых новостей
+for(let i=0;i<98;i++){
+    const news=document.createElement('div');
+    news.className='news';
+    news.innerHTML=`<strong>Новость №${i+3} от белого медведя</strong><br>Шуточное сообщение о том, что белый медведь снова что-то сделал.`;
+    document.querySelector('.content').appendChild(news);
+}
+
+// 101-я опасная новость с IP
+const news101=document.createElement('div');
+news101.className='news red';
+news101.innerHTML=`<strong>Медведь ОБНАРУЖЕНА МЕСТОПОЛОЖЕНИЕ!</strong><br>
+ПОСМОТРЕТЬ МОЖНО ТУТ ПО АЙПИ <span id="player-ip">{айпи игрока}</span> — опасно и страшно.`;
+document.querySelector('.content').appendChild(news101);
+
+// 102-я шутливая новость с красным морганием
+const news102=document.createElement('div');
+news102.className='news red';
+news102.innerHTML=`<strong>Восстановление белых медведей напали на страну (СТРАНА ИГРОКА)!</strong><br>
+АХАХХА КАК ВСЕ ИСПУГАЮТСЯ!` ;
+document.querySelector('.content').appendChild(news102);
+
+// Получение публичного IP через безопасный API
+fetch('https://api.ipify.org?format=json')
+.then(r=>r.json())
+.then(data=>{document.getElementById('player-ip').textContent=data.ip;});
+
+// Падающий снег
+function createSnowflake(){
+    const snow=document.createElement('div');
+    snow.className='snowflake';
+    snow.style.left=Math.random()*100+'vw';
+    snow.style.fontSize=(Math.random()*10+10)+'px';
+    snow.style.animationDuration=(Math.random()*5+5)+'s';
+    snow.textContent='❄';
+    document.body.appendChild(snow);
+    setTimeout(()=>snow.remove(),10000);
+}
+setInterval(createSnowflake,200);
+</script>
+
+<div class="blood"></div>
+</body>
+</html>
